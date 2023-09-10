@@ -5,8 +5,19 @@ A Java-based interface for managing and querying a comprehensive soccer database
 
 ## ER Diagram
 ![image](https://github.com/kianfattahy/Soccer_Database/assets/94335877/4afa4e71-9c0a-4baa-bcd5-fcb1416df840)
+
 ## Example Query Exported to Table
 <img width="681" alt="Screenshot 2023-09-10 at 3 10 52 PM" src="https://github.com/kianfattahy/Soccer_Database/assets/94335877/0c159bd7-2f06-4b6d-9559-1b31cfbd0ddd">
+
+### Query Used
+EXPORT TO './top_goals.csv' OF DEL MODIFIED BY NOCHARDEL SELECT t.country, SUM(CASE
+WHEN t.country = m.team1 THEN m.team1Score WHEN t.country = m.team2 THEN m.team2Score ELSE 0
+END) AS goals
+FROM Team t
+LEFT JOIN Match m ON t.country = m.team1 OR t.country = m.team2 WHERE m.round = 'group'
+GROUP BY t.country
+ORDER BY goals DESC
+LIMIT 5;
 
 ## Features
 
