@@ -1,7 +1,7 @@
 # Soccer Database Interface
 
 ## Description
-A Java-based interface for managing and querying a comprehensive soccer database, covering various aspects of a soccer tournament from team management to ticketing.
+A Java-based interface for managing and querying a comprehensive soccer database, covering various aspects of the World Cup from team management to ticketing.
 
 ## Features
 
