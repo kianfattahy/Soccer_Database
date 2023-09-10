@@ -4,8 +4,8 @@
 A Java-based interface for managing and querying a comprehensive soccer database for the World Cup. This tool provides a unified platform for managing and querying everything from team details and player statistics to match outcomes and ticket transactions. 
 
 ## ER Diagram
-[ER.pdf](https://github.com/kianfattahy/Soccer_Database/files/12570031/ER.pdf)
-# Example Query Exported to Table
+![image](https://github.com/kianfattahy/Soccer_Database/assets/94335877/4afa4e71-9c0a-4baa-bcd5-fcb1416df840)
+## Example Query Exported to Table
 <img width="681" alt="Screenshot 2023-09-10 at 3 10 52 PM" src="https://github.com/kianfattahy/Soccer_Database/assets/94335877/0c159bd7-2f06-4b6d-9559-1b31cfbd0ddd">
 
 ## Features
